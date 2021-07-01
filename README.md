@@ -6,7 +6,20 @@ This is a simple python script to automate airtime disbursal using google-forms,
 
 This is meant to be a proof of concept code not an exhaustive 
 write-up on DIY airtime disbursal.
+### Getting Started
+The First important part of the whole process is to create a Google Form. Visit this [link](https://docs.google.com/forms/) and create a new form.
+The next step is to authenticate our Python Script and Local Environment with Google and access the Google Form Data from Google Drive by enabling the Google Drive API in Google Cloud Platform. Follow these steps:
 
+    1. Go to the Google Form    
+    2. Responses Tab,
+    3. Click the spreadsheet icon
+    4. And create a new Destination Spreadsheet for our google form.
+This Spreadsheet will be created and stored in Google Drive. We have to integrate Google Drive and Python Environment. First, we have to authenticate with Google.
+
+
+#### Authenticating the Google Drive API
+Now, to work with Google Drive API, we have to set up our account, enable Google Drive API and obtain our client_secrets.json key.
+Since we are using the [gspread](https://github.com/burnash/gspread) library, find more instructions in the [docs](https://docs.gspread.org/en/latest/oauth2.html)
 ### Prerequisites
 - Python and pip (I am currently using 3.9.2) Any version above 3.5 should work.
 - An [Africas Talking account](https://account.africastalking.com/auth/register/).
