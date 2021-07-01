@@ -45,6 +45,12 @@ def airtime_disbursal(number, airtime_amount: str, airtime_currency_code: str):
 # Set The 3-Letter ISO currency code and the amount
 amount = "5"
 currency_code = "KES"
+
 # Unpack the list of values
 for item in sheet_data:
-    print(type(item[4]))
+    print(item[4])
+    mobile_number = item[4]
+    # for each number in the sheet send airtime topup as specified.
+    airtime_disbursal(mobile_number, amount, currency_code)
+
+print(account.fetch_application_data())
