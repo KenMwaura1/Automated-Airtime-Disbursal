@@ -25,8 +25,8 @@ Since we are using the [gspread](https://github.com/burnash/gspread) library, fi
 - An [Africas Talking account](https://account.africastalking.com/auth/register/).
     - Api Key and username from your account. Create an app and take note of the api key.
     - Additionally, you will need to request them to enable airtime access for your account.
-      Email their airtime team for further clarification.
-https://github.com/KenMwaura1/Automated-Airtime-Disbursal
+      Email their airtime team for further clarification. Check more information [here](https://africastalking.com/airtime)
+      
 ## Running the script
 1. Clone the Repo
 
