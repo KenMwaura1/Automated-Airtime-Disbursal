@@ -1,5 +1,5 @@
 import os
-import africastalking as at
+import africastalking as at 
 from dotenv import load_dotenv
 import gspread
 
@@ -51,6 +51,7 @@ for item in sheet_data:
     print(item[4])
     mobile_number = item[4]
     # for each number in the sheet send airtime top-up as specified.
-    airtime_disbursal(mobile_number, amount, currency_code)
+    # airtime_disbursal(mobile_number, amount, currency_code)
 
 print(account.fetch_application_data())
+
