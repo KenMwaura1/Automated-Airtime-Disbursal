@@ -9,10 +9,9 @@ sh = gc.open('Contact Information (Responses)')
 # print(sh.sheet1.get('B2'))
 
 # Load our sensitive information using environment variables
-load_dotenv()
-# get the environment values from the .env file
-at_username = os.getenv('at_username')
-at_api_key = os.getenv('at_api_key')
+# Changes for heroku deployment
+at_username = os.environ.get('at_username')
+at_api_key = os.environ.get('at_api_key')
 
 # initialize africas talking using username and api key
 at.initialize(at_username, at_api_key)
